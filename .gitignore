@@ -27,3 +27,7 @@ docs/
 
 .env
 node_modules
+
+### Remix IDE ###
+.states
+.deps

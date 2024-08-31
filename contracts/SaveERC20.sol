@@ -9,7 +9,11 @@ contract SaveERC20 {
 
     event DepositSuccessful(address indexed user, uint256 indexed amount);
     event WithdrawalSuccessful(address indexed user, uint256 indexed amount);
-    event TransferSuccessful(address indexed from, address indexed _to, uint256 indexed amount);
+    event TransferSuccessful(
+        address indexed from,
+        address indexed _to,
+        uint256 indexed amount
+    );
 
     constructor(address _tokenAddress) {
         owner = msg.sender;
@@ -20,7 +24,6 @@ contract SaveERC20 {
         require(owner == msg.sender, "not owner");
         _;
     }
-
 
     function deposit(uint256 _amount) external {
         require(msg.sender != address(0), "zero addres detected");
@@ -50,26 +53,31 @@ contract SaveERC20 {
         emit WithdrawalSuccessful(msg.sender, _amount);
     }
 
-    function myBalance() external view returns(uint256) {
+    function myBalance() external view returns (uint256) {
         return balances[msg.sender];
     }
 
-    function getAnyBalance(address _user) external view onlyOwner returns(uint256) {
+    function getAnyBalance(address _user)
+        external
+        view
+        onlyOwner
+        returns (uint256)
+    {
         return balances[_user];
     }
 
-    function getContractBalance() external view onlyOwner returns(uint256) {
+    function getContractBalance() external view onlyOwner returns (uint256) {
         return token.balanceOf(address(this));
     }
 
-   
-  /**
-   * @dev This contract is used to manage ERC20 tokens and allows deposits, withdrawals, and transfers of funds.
-   */   function transferFunds(address _to, uint256 _amount) external {
+    /**
+     * @dev This contract is used to manage ERC20 tokens and allows deposits, withdrawals, and transfers of funds.
+     */
+    function transferFunds(address _to, uint256 _amount) external {
         require(msg.sender != address(0), "zero address detected");
 
         require(_to != address(0), "can't send to");
-        
+
         require(balances[msg.sender] >= _amount, "Insufficient funds!");
 
         balances[msg.sender] -= _amount;
@@ -79,7 +87,9 @@ contract SaveERC20 {
         emit TransferSuccessful(msg.sender, _to, _amount);
     }
 
-    function depositForAnotherUserFromWithin(address _user, uint256 _amount) external {
+    function depositForAnotherUserFromWithin(address _user, uint256 _amount)
+        external
+    {
         require(msg.sender != address(0), "zero address detected");
         require(_user != address(0), "can't send to");
 
@@ -93,7 +103,6 @@ contract SaveERC20 {
         require(msg.sender != address(0), "zero address detected");
         require(_user != address(0), "can't send to");
 
-
         uint256 _userTokenBalance = token.balanceOf(msg.sender);
 
         require(_userTokenBalance >= _amount, "insufficient amount");
@@ -104,7 +113,10 @@ contract SaveERC20 {
     }
 
     function ownerWithdraw(uint256 _amount) external onlyOwner {
-        require(token.balanceOf(address(this)) >= _amount, "insufficient funds");
+        require(
+            token.balanceOf(address(this)) >= _amount,
+            "insufficient funds"
+        );
 
         token.transfer(owner, _amount);
     }

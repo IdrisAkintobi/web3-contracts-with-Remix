@@ -1,0 +1,72 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"goerli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "6080604052348015600e575f80fd5b50604480601a5f395ff3fe608060405236600a57005b5f80fdfea2646970667358221220534a4a02bc2bbe510d47a3d114405cadcfa7ffe7e7d7699418727ebc6436ce5e64736f6c634300081a0033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xE JUMPI PUSH0 DUP1 REVERT JUMPDEST POP PUSH1 0x44 DUP1 PUSH1 0x1A PUSH0 CODECOPY PUSH0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLDATASIZE PUSH1 0xA JUMPI STOP JUMPDEST PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 MSTORE8 BLOBBASEFEE BLOBBASEFEE MUL 0xBC 0x2B 0xBE MLOAD 0xD SELFBALANCE LOG3 0xD1 EQ BLOCKHASH TLOAD 0xAD 0xCF 0xA7 SELFDESTRUCT 0xE7 0xE7 0xD7 PUSH10 0x9418727EBC6436CE5E64 PUSH20 0x6F6C634300081A00330000000000000000000000 ",
+			"sourceMap": "958:55:0:-:0;;;;;;;;;;;;;;;;;;;"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {
+				"@_6": {
+					"entryPoint": null,
+					"id": 6,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				}
+			},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "608060405236600a57005b5f80fdfea2646970667358221220534a4a02bc2bbe510d47a3d114405cadcfa7ffe7e7d7699418727ebc6436ce5e64736f6c634300081a0033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLDATASIZE PUSH1 0xA JUMPI STOP JUMPDEST PUSH0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 MSTORE8 BLOBBASEFEE BLOBBASEFEE MUL 0xBC 0x2B 0xBE MLOAD 0xD SELFBALANCE LOG3 0xD1 EQ BLOCKHASH TLOAD 0xAD 0xCF 0xA7 SELFDESTRUCT 0xE7 0xE7 0xD7 PUSH10 0x9418727EBC6436CE5E64 PUSH20 0x6F6C634300081A00330000000000000000000000 ",
+			"sourceMap": "958:55:0:-:0;;;;;;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "13600",
+				"executionCost": "67",
+				"totalCost": "13667"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": [
+		{
+			"stateMutability": "payable",
+			"type": "receive"
+		}
+	]
+}

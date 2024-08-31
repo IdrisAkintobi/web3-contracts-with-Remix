@@ -11,7 +11,7 @@ contract Web3CXI is ERC20("iDris Token", "DRZ") {
         _mint(msg.sender, 100e18);
     }
 
-    function mint(uint _amount) external {
+    function mint(uint256 _amount) external {
         require(msg.sender == owner, "ONLY THE OWNER CAN MINT");
         _mint(msg.sender, _amount * 1e18);
     }

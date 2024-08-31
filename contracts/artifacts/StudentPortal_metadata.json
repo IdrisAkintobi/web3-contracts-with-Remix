@@ -196,11 +196,11 @@
 	},
 	"sources": {
 		"contracts/StudentPortal.sol": {
-			"keccak256": "0x6d5aa852024502b98904718736c33c0c2242c6d015ae130aaf8e03668ececbbf",
+			"keccak256": "0xbaf00fa0832b10e3c8ffc3550f3c66c8ea075d7b3cd5d8576889fd52d5b898ae",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://826f889591ef6f1ec9ba13659bf0b9ee8abe2b3b9d4421c6de53c65e59ab15fd",
-				"dweb:/ipfs/QmVhNSNsicfimP6CPP3MtvAeVmH8iJqVQhZ3pswvbP32t7"
+				"bzz-raw://67764f5676d0c49f2a78e844342db1beb09440221c32485b4c6779362a7b9de1",
+				"dweb:/ipfs/QmUMEHPUZNPy8WKqnYGRujgKMeKtqVr5njXsu2e3Rxss2r"
 			]
 		}
 	},

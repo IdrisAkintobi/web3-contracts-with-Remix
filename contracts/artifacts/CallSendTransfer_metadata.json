@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/CallSendTransfer.sol": "CallSendTransfer"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/CallSendTransfer.sol": {
+			"keccak256": "0xfc5f112aea065494d77788227722f40fe9530457773613283fc9f39f3fe16d46",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5f1d92e6766ae680163febf2c97aeff5fcea0ff5db7aa0eccd4a7c67b7b29a0a",
+				"dweb:/ipfs/QmVLFvo3Tznk5eeYNnkX5KdafqW4NGs283StAzQvVPTp5V"
+			]
+		}
+	},
+	"version": 1
+}

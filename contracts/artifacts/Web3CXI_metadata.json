@@ -463,11 +463,11 @@
 	},
 	"sources": {
 		"contracts/IERC20.sol": {
-			"keccak256": "0x8404478795aad7262fa0be4ca5474b1b43a6abd8b38a896e83f029ee73a645bb",
+			"keccak256": "0x3996c57737a9a7afb5ecc29537aa02b702588dd35278d53b916766ee925c7ffb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://da8f4cbf8f348bbc49bb451d26cc127a60afdc30453b804baf73af62713468fd",
-				"dweb:/ipfs/QmRZ4z7PMsNZvdjzhWYXuXhxkadyv6xyPJtHKxFzXF9LQy"
+				"bzz-raw://8ad9c9999f7fa212d5a93a8223a59d9bc6a06ee0d62e107a2717fbbd56c03b9a",
+				"dweb:/ipfs/QmZpsj8xABum3hba2rhGMZuRx6aTzFLREPXL2Um2Vvnx7Z"
 			]
 		},
 		"https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/interfaces/draft-IERC6093.sol": {

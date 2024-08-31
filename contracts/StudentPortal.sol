@@ -42,10 +42,7 @@ contract StudentPortal {
         return students[_id];
     }
 
-    function updateStudent(uint32 _id, Student memory newRecord)
-        external
-        auth
-    {
+    function updateStudent(uint32 _id, Student memory newRecord) external auth {
         if (bytes(newRecord.name).length > 0) {
             students[_id].name = newRecord.name;
         }
