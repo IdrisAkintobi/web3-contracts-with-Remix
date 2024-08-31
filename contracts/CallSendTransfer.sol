@@ -54,7 +54,6 @@ contract Send {
         console.log("Sent status:", sent);
     }
 
-    // This contract can receive Ether directly.
     receive() external payable {}
 }
 

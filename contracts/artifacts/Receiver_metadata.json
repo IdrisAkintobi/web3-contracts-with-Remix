@@ -38,11 +38,11 @@
 	},
 	"sources": {
 		"contracts/CallSendTransfer.sol": {
-			"keccak256": "0x99c49802a58775930aec6c8b15211fa5fb80ce7ea52e69f4593a12fd70332eff",
+			"keccak256": "0xf4f62442aa3fed2250a11ad9092e4a7289248b0c51f79328dc64917371a735e5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://03e80e65775493d926ad46432a46ae962c1c06afae1fc5c44dee01aebfd428d7",
-				"dweb:/ipfs/QmQqcse4rgEkFPHEwgjxVrH6njjJh2EPXwchkCopWb9C1v"
+				"bzz-raw://9c3f38774c5c515a93e9f9c322d882fc450c5de1dfc25016325dc23088837999",
+				"dweb:/ipfs/QmRso5WFJhjnv8XpHnzGm5ecWvH6NryLrWyKPZKkpcxaiF"
 			]
 		},
 		"hardhat/console.sol": {
